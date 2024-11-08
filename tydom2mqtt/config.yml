@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: tydom2mqtt
 image: quentin8/tydom2mqtt
-version: 3.4.3.3
+version: refs/tags/3.5.3.1
 slug: tydom2mqtt
 description: Deltadore Tydom to MQTT Bridge
 arch:
@@ -13,7 +13,6 @@ arch:
 url: https://github.com/Quentin8/tydom2mqtt.git
 services:
   - mqtt:need
-
 ########## DEFAULT OPTIONS #######################################################################################################
 options:
   TYDOM_MAC: 001A25XXXXXX
@@ -28,7 +27,6 @@ options:
   MQTT_PORT: 1883
   MQTT_SSL: false
   LOG_LEVEL: INFO
-
 ########## OPTIONS SCHEMA ########################################################################################################
 schema:
   LOG_LEVEL: list(DEBUG|INFO|WARNING|ERROR)?
